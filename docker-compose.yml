@@ -1,0 +1,10 @@
+services:
+  ubuntu:
+    container_name: enpit
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ${PWD}/workspace:/workspace
+    tty: true
+    stdin_open: true
